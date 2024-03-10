@@ -3,7 +3,7 @@ import urllib.request
 from fastai.vision.all import *
 
 # Load the pre-trained model
-model = load_learner('lion_vs_tiger.pkl')
+model = load_learner('lion_vs_tiger')
 
 def predict(image):
     img = PILImage.create(image)  # Use PILImage.create to open the image
