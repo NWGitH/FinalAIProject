@@ -2,12 +2,6 @@ import streamlit as st
 import urllib.request
 from fastai.vision.all import *
 
-def label_function(file_name):
-  if file_name[0].isupper():  # isupper is True if all the characters in the string are uppercase
-    return True
-  else:
-    return False
-
 # Load the pre-trained model
 model = load_learner('lion_vs_tiger.pkl')
 
